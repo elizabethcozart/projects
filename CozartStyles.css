@@ -1,0 +1,268 @@
+/* CSS ~ Bookshelf
+Property of Elizabeth Cozart */
+
+* {
+	box-sizing: border-box;
+}
+
+/* Highlight code ~ w3schools */
+
+/* Code for Firefox */
+::-moz-selection {
+	color: #fff;
+	background: #A5C6BF;
+}
+
+::selection {
+	color: #fff;
+	background: #A5C6BF;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Sarabun', sans-serif;
+	color: #000;
+	background-image: url('background.jpg');
+}
+
+h1,
+h2,
+h3 {
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	color: #000;
+}
+
+
+h1 {
+	font-size: 30px;
+	padding: 15px;
+	margin: 0 auto;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 22px;
+	margin: 35px 0 -35px 0;
+}
+
+h3 {
+	font-size: 15px;
+	margin: -15px 0 0 125px;
+}
+
+/* Content container */
+#content {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 45px;
+}
+
+/* Main header */
+#header {
+	width: 100%;
+	height: 192px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('books.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 10px 10px 40px 5px #ddd;
+}
+
+/* Main description */
+#description {
+	font-size: 13px;
+	line-height: 18px;
+	width: auto;
+	margin: auto;
+}
+
+/* Main nav */
+#nav {
+	display: inline-block;
+	background-color: #fff;
+	padding: 12px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#nav a {
+	color: #A5C6BF;
+	padding: 12px;
+	font-size: 15px;
+	font-family: 'Handlee', cursive;
+	font-weight: bold;
+	text-decoration: none;
+	border-right: 1px dashed #000;
+}
+
+/* Columns & rows for page content ~ w3schools */
+.column {
+	margin-top: 108px;
+	height: auto;
+	display: inline-block;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+	margin-bottom: -4px;
+	box-shadow: 5px 5px 30px 0 #ddd;
+}
+
+img:hover {
+	position: relative;
+	transform: scale(1.2);
+	top: -17px;
+}
+
+/* Mobile navigation/side panel toggle  ~ w3schools */
+#mobile-nav {
+	position: fixed;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 5px 5px 30px 0 #ddd;
+	z-index: 9;
+}
+
+.sidepanel {
+	position: fixed;
+	width: 0;
+	height: auto;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 5px 5px 30px 0 #ddd;
+	overflow-x: hidden;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	z-index: 9;
+	transition: 0.5s;
+}
+
+.sidepanel p {
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Handlee', cursive;
+}
+
+.sidepanel a {
+	padding: 12px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #A5C6BF;
+	font-family: 'Handlee', cursive;
+	font-weight: bold;
+	display: block;
+}
+
+.sidepanel .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 20px;
+}
+
+.openbtn {
+	float: left;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #fff;
+	color: #A5C6BF;
+	padding: 10px 15px;
+	border: none;
+}
+
+.openbtn:hover {
+	background-color: #fff;
+}
+
+/* Header for tablets/mobile devices */
+#mobile-header {
+	width: 75%;
+	height: auto;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #A5C6BF;
+	box-shadow: 5px 5px 30px 0 #ddd;
+}
+
+#mobile-header h3 {
+	font-size: 15px;
+	margin: -15px 0 15px 0;
+}
+
+#mobile-header p {
+	font-size: 13px;
+	line-height: 18px;
+	padding: 0 15px 15px 15px;
+	width: auto;
+	margin: auto;
+}
+
+/* Responsive codes */
+
+/* Small devices */
+@media only screen and (max-width: 767px) {
+	#mobile-nav {
+		visibility: visible;
+	}
+	#mobile-header {
+		visibility: visible;
+	}
+	#header {
+		display: none;
+	}
+	#nav {
+		display: none;
+	}
+	.row {
+		display: grid;
+		grid-template-columns: auto;
+	}
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+	#mobile-nav {
+		display: none;
+	}
+	#mobile-header {
+		display: none;
+	}
+	.row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border-bottom: 10px solid #A5C6BF;
+	}
+}
+
+/* Large devices */
+@media only screen and (min-width: 992px) {
+	#mobile-nav {
+		display: none;
+	}
+	#mobile-header {
+		display: none;
+	}
+	.row {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		border-bottom: 10px solid #A5C6BF;
+	}
+}
