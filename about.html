@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pitt County Rescue Pets & Adoption: About Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="w3.css" rel="stylesheet" type="text/css">
+	<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+	<link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quattrocento+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="crosshair">
+		<!-- Navbar -->
+		<div class="w3-top">
+			<div class="w3-bar w3-blue w3-top w3-left-align w3-large top-border">
+				<a class="w3-bar-item w3-button w3-right w3-hide-large w3-text-white w3-hover-white w3-large w3-blue" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-bars"></i></a>
+				<div class="w3-bar w3-bar-item">
+					A Wonderful Place for Your Pet Adoption Needs
+				</div><a class="w3-bar-item w3-right w3-hide-small w3-hide-medium w3-text-white w3-hover-white" href="#"><i class="fas fa-search"></i></a> <a class="w3-bar-item w3-right w3-hide-small w3-hide-medium w3-text-white w3-hover-white" href="#"><i class="fab fa-twitter"></i></a> <a class="w3-bar-item w3-right w3-hide-small w3-hide-medium w3-text-white w3-hover-white" href="#"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<!-- Sidebar -->
+		<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-brown w3-animate-left" id="mySidebar">
+			<a class="w3-right w3-xlarge w3-padding-large w3-text-white w3-hover-brown w3-hide-large" href="javascript:void(0)" onclick="w3_close()">
+			<div class="tooltip">
+				<i class="fas fa-times"><span class="tooltiptext">Close Menu</span></i>
+			</div></a>
+			<h4 class="w3-bar-item">Navigate Site</h4><a class="w3-bar-item w3-button w3-hover-white w3-medium" href="rescuepets.html"><span class="lnr lnr-home"></span> Home</a> <a class="w3-bar-item w3-button w3-hover-white w3-medium" href="about.html"><span class="lnr lnr-pencil"></span> About Us</a> <a class="w3-bar-item w3-button w3-hover-white w3-medium" href="contact.html"><span class="lnr lnr-book"></span> Contact</a> <a class="dropdown-btn w3-button w3-block w3-brown w3-left-align w3-medium w3-hover-white" href="javascript:void(0)" id="myBtn" onclick="myAccFunc()"><span class="lnr lnr-heart"></span> Animals</a>
+			<div class="dropdown-container w3-bar-block w3-padding-large w3-medium" id="demoAcc">
+				<a class="w3-bar-item w3-button w3-hover-white" href="dogs.html"><span class="lnr lnr-paw"></span> Dog Care</a> <a class="w3-bar-item w3-button w3-hover-white" href="cats.html"><span class="lnr lnr-star"></span> Cat Care</a> <a class="w3-bar-item w3-button w3-hover-white" href="pets.html"><span class="lnr lnr-file-add"></span> Rescue Pets</a> <a class="w3-bar-item w3-button w3-hover-white" href="adoption-process.html"><span class="lnr lnr-pointer-right"></span> Adoption Process</a>
+			</div><a class="w3-bar-item w3-button w3-hover-white w3-medium" href="job-and-volunteer.html"><span class="lnr lnr-map"></span> Job & Volunteer Opportunities</a>
+		</nav>
+		<!-- Overlay effect when opening sidebar on small screens -->
+		<div class="w3-overlay w3-hide-large" id="myOverlay" onclick="w3_close()" style="cursor:pointer"></div><!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+		<div class="w3-main" style="margin-left:250px">
+			<div class="w3-row w3-padding-64 w3-center">
+				<h1 class="w3-text-blue" style="padding-top:10px">About Us</h1>
+				<div class="w3-container w3-left-align" style="margin-bottom:-50px">
+					<p><mark><b>Purpose Statement</b></mark></p>
+					<p>Pitt County Animal Services is a local shelter that rehabilitates stray and abandoned animals. The main goal of the Pitt County Rescue Pets & Adoption site is to find rescue pets the best home possible.</p>
+					<p><mark><b>Goals:</b></mark></p>
+					<ul>
+						<li>To gain customers</li>
+						<li>To get the site noticeable</li>
+						<li>To increase website traffic</li>
+					</ul>
+					<p><mark><b>Objectives:</b></mark></p>
+					<ul>
+						<li>Creating an online adoption process</li>
+						<li>Using social media for updates</li>
+						<li>Advertising through social media</li>
+					</ul>
+					<p><a href="https://www.pittcountync.gov/153/Animal-Services" target="_blank">Pitt County Animal Services</a></p>
+				</div>
+			</div>
+			<div style="margin-top:-13px"></div>
+			<footer id="myFooter">
+				<div class="w3-container w3-blue w3-padding-32">
+					<h5>Last Updated: 12/04/18 11:01PM</h5>
+				</div>
+				<div class="w3-container w3-brown">
+					<p>Powered by <a class="w3-text-white w3-hover-brown" href="https://www.w3schools.com/w3css/default.asp" style="text-decoration:underline" target="_blank">w3.css</a></p>
+				</div>
+			</footer>
+		<!-- END MAIN -->
+		</div>
+		<script>
+		// Accordion
+		function myAccFunc() {
+		  var x = document.getElementById("demoAcc");
+		  if (x.className.indexOf("w3-show") == -1) {
+		      x.className += " w3-show";
+		  } else {
+		      x.className = x.className.replace(" w3-show", "");
+		  }
+		}
+
+		// Click on the "Animals" link on page load to open the accordion for demo purposes
+		document.getElementById("myBtn").click();
+
+		// Get the Sidebar
+		var mySidebar = document.getElementById("mySidebar");
+
+		// Get the DIV with overlay effect
+		var overlayBg = document.getElementById("myOverlay");
+
+		// Toggle between showing and hiding the sidebar, and add overlay effect
+		function w3_open() {
+		  if (mySidebar.style.display === 'block') {
+		      mySidebar.style.display = 'none';
+		      overlayBg.style.display = "none";
+		  } else {
+		      mySidebar.style.display = 'block';
+		      overlayBg.style.display = "block";
+		  }
+		}
+
+		// Close the sidebar with the close button
+		function w3_close() {
+		  mySidebar.style.display = "none";
+		  overlayBg.style.display = "none";
+		}
+		</script>
+	</div>
+</body>
+</html>
