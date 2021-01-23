@@ -9,14 +9,14 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
-	background-color: #ffa500;
+	background-color: #B8BC86;
 	font-family: 'Questrial', sans-serif;
 	font-size: 15px;
 	text-align: center;
 }
 
 a {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -25,41 +25,48 @@ a {
 /* Code for Firefox */
 ::-moz-selection {
 	color: #fff;
-	background: #ffa500;
+	background: #000;
 }
 
 ::selection {
 	color: #fff;
-	background: #ffa500;
+	background: #000;
 }
 
 /* Index Page */
+
+#top-border {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	border: 25px solid #000;
+}
+
 #index-header-title {
-	text-shadow: 1px 1px #000;
-	margin: 20px;
-	color: #fff;
-	font-family: 'Satisfy', cursive;
-	font-size: 40px;
+	padding: 15px;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 0;
 }
 
 #index-content {
-	padding: 15px;
-	background-color: #ffa500;
+	background-color: #B8BC86;
 }
 
 #main-heading {
-	text-shadow: 1px 1px #000;
-	color: #fff;
-	font-family: 'Satisfy', cursive;
-	font-size: 40px;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
 }
 
 #secondary-heading {
-	font-family: 'Satisfy', cursive;
-	font-size: 30px;
-	margin: 5px 0 30px 0;
-	color: #fff;
-	text-shadow: 1px 1px #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0 30px 0;
+	color: #000;
 	padding: 3px;
 }
 
@@ -74,7 +81,6 @@ a {
 	padding: 5px;
 	display: block;
 	background-color: #000;
-	border: 2px solid #fff;
 }
 
 #countries figure {
@@ -90,6 +96,7 @@ a {
 
 #countries figcaption {
 	display: block;
+	font-weight: bold;
 	margin: 15px auto;
 	background-color: #fff;
 	border: 2px solid #000;
@@ -106,9 +113,8 @@ a {
 
 #travel-header-title, #travel-header-title a {
 	margin: 10px;
-	font-family: 'Satisfy', cursive;
-	font-size: 30px;
-	text-shadow: 1px 1px #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
 }
 
 #nav {
@@ -124,6 +130,7 @@ a {
 	background-color: #000;
 	border: 2px solid #fff;
 	text-decoration: none;
+	font-weight: bold;
 	color: #fff;
 	width: 110px;
 	height: auto;
@@ -140,10 +147,10 @@ a {
 
 #travel-heading {
 	margin: 25px auto;
-	text-shadow: 1px 1px #000;
-	color: #ffa500;
-	font-family: 'Satisfy', cursive;
-	font-size: 40px;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
 }
 
 /* Columns & rows for scenic pictures ~ w3schools */
@@ -173,9 +180,12 @@ a {
 /* Responsive codes */
 
 /* Small devices */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 799px) {
 	#travel-content {
 		margin-top: 0;
+	}
+	#index-header-title {
+		margin-top: 108px;
 	}
 	#nav a {
 		display: block;
