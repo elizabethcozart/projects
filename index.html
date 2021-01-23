@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio Template</title>
+	<meta charset="utf-8">
+	<meta name="author" content="">
+	<meta name="title" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="CozartStyles.css" rel="stylesheet" type="text/css">
+	<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Antic|Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+	<button class="fas fa-arrow-up" id="toTopButton" onclick="topFunction()"></button>
+	<div id="mobile-nav">
+		<button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+		<div id="myLinks">
+			<a href="index.html">Home</a> <a href="/">About</a> <a href="/">Samples</a> <a href="contact.html">Contact</a> <a href="/">Resume</a> <a href="/">Social Link</a> <a href="/">Social Link</a>
+		</div>
+	</div>
+	<div id="cover-bkg">
+		<div class="index-social">
+			<div class="tooltip">
+				<a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a> <span class="tooltiptext">linkedin</span>
+			</div>
+			<div class="tooltip">
+				<a href="https://github.com/" target="_blank"><i class="fab fa-github-alt"></i></a> <span class="tooltiptext">github</span>
+			</div>
+			<div class="tooltip">
+				<a href="https://twitter.com/" target="_blank"><i class="fab fa-codepen"></i></a> <span class="tooltiptext">codepen</span>
+			</div>
+		</div>
+		<div id="cover">
+			<div id="quote">
+				"Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."<br>
+				- Source
+			</div>
+			<div id="nav">
+				<a href="index.html">Home</a> <a href="about.html">About</a> <a href="/">Samples</a> <a href="contact.html">Contact</a> <a href="/">Resume</a>
+			</div>
+			<h1>Portfolio</h1>
+			<h2>First & Last Name</h2>
+			<h2>Job Title</h2>
+			<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+	<h1>What's Included</h1>
+	<div id="h1-border"></div>
+	<div class="wrapper">
+		<div id="box">
+			<a href="/">
+			<div id="box-heading">
+				About Me
+			</div><i class="fas fa-user-edit"></i>
+			<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></a>
+		</div>
+		<div id="box">
+			<a href="/">
+			<div id="box-heading">
+				Sample Work
+			</div><i class="fas fa-th-large"></i>
+			<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></a>
+		</div>
+		<div id="box">
+			<a href="contact.html">
+			<div id="box-heading">
+				Contact Form
+			</div><i class="fas fa-envelope-open-text"></i>
+			<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></a>
+		</div>
+		<div id="box">
+			<a href="/">
+			<div id="box-heading">
+				Printable Resume
+			</div><i class="fas fa-file-pdf"></i>
+			<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></a>
+		</div>
+	</div>
+	<div id="footer">
+		<a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="https://github.com/" target="_blank"><i class="fab fa-github-alt"></i></a> <a href="https://codepen.com/" target="_blank"><i class="fab fa-codepen"></i></a>
+		<div id="footer-menu">
+			<a href="index.html">Home</a>&nbsp; | &nbsp;<a href="/">About</a>&nbsp; | &nbsp;<a href="/">Samples</a>&nbsp; | &nbsp;<a href="contact.html">Contact</a>&nbsp; | &nbsp;<a href="/">Resume</a>
+		</div><br>
+		&copy; Copyright<br>
+		Last Updated: Date
+	</div>
+	<script>
+	   //Get the button:
+	   mybutton = document.getElementById("toTopButton");
+
+	   // When the user scrolls down 20px from the top of the document, show the button
+	   window.onscroll = function() {scrollFunction()};
+
+	   function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	      mybutton.style.display = "block";
+	    } else {
+	      mybutton.style.display = "none";
+	    }
+	   }
+
+	   // When the user clicks on the button, scroll to the top of the document
+	   function topFunction() {
+	    document.body.scrollTop = 0; // For Safari
+	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	   }
+	</script>
+	<script>
+	function openNav() {
+	  var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}
+	</script>
+</body>
+</html>

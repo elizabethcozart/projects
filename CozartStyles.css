@@ -1,0 +1,688 @@
+/* CSS ~ Portfolio Template
+Property of Elizabeth Cozart */
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Antic', sans-serif;
+}
+
+a {
+	color: #807A7A;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+/* Highlight code ~ w3schools */
+
+/* Code for Firefox */
+::-moz-selection {
+	color: #fff;
+	background: #807A7A;
+}
+
+::selection {
+	color: #fff;
+	background: #807A7A;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	margin: 30px auto;
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
+	margin-bottom: -10px;
+}
+
+/* Mobile menu ~ w3schools */
+#mobile-nav {
+	position: relative;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	width: 100%;
+	background-color: #000;
+}
+
+#mobile-nav a {
+	display: block;
+	background-color: #fff;
+	padding: 15px;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	border-bottom: 2px solid #807A7A;
+	color: #000;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#mobile-nav a:hover {
+	color: #807A7A;
+	transition: 0.5s;
+}
+
+.openbtn {
+	display: block;
+	margin: auto;
+	font-size: 30px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	padding: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.openbtn:hover {
+	background-color: #807A7A;
+	color: #000;
+	transition: 0.5s;
+}
+
+#mobile-nav #myLinks {
+	display: none;
+}
+
+/* Tooltip code ~ w3schools */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	width: 70px;
+	background-color: #000;
+	color: #fff;
+	outline: 1px solid #fff;
+	outline-offset: -2px;
+	font-size: 12px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 105%;
+	left: 50%;
+	margin-left: -32px;
+	/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* To Top Button ~ w3schools */
+#toTopButton {
+	display: none;
+	position: fixed;
+	bottom: 170px;
+	left: 15px;
+	z-index: 99;
+	font-size: 30px;
+	color: #fff;
+	background-color: #807A7A;
+	cursor: pointer;
+	padding: 10px;
+	border: 0;
+	transition: 0.5s;
+}
+
+#toTopButton:hover {
+	color: #000;
+	transition: 0.5s;
+}
+
+/* Image border-bottom line for mobile */
+#img-line {
+	border-bottom: 4px double #000;
+	background-color: #fff;
+}
+
+/* Navigation links */
+#nav,
+#nav a {
+	position: relative;
+	color: #807A7A;
+	font-weight: bold;
+	margin: 30px 22px 30px 22px;
+	transition: 0.5s;
+}
+
+#nav a:hover {
+	color: #000;
+	transition: 0.5s;
+}
+
+#nav a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	background-color: #807A7A;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	transition: 0.5s;
+}
+
+#nav a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+/* Main Cover for Index Page */
+#cover {
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 15px;
+	width: auto;
+	margin: auto;
+	height: auto;
+}
+
+#cover h1 {
+	margin: 20px auto;
+	font-size: 40px;
+}
+
+#cover h2 {
+	margin: 20px auto;
+	font-size: 38px;
+}
+
+#cover h3 {
+	margin: 20px auto;
+	font-size: 24px;
+}
+
+#cover p {
+	width: 75%;
+	margin: 25px auto 15px auto;
+}
+
+/* Heading 1 bottom-border for Index Page */
+#h1-border {
+	width: 98%;
+	margin: 30px auto;
+	border-bottom: 2px solid #807A7A;
+}
+
+/* Cover Background for Index Page */
+#cover-bkg {
+	padding: 125px;
+	background-color: #807A7A;
+}
+
+/* Border Background for non-index pages */
+#border-bkg {
+	padding: 57.5px;
+	background-color: #807A7A;
+}
+
+/* Quote for Index Page */
+#quote {
+	font-family: 'Raleway', sans-serif;
+	margin: 15px auto;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Social media buttons for Index Page */
+.index-social {
+	font-size: 20px;
+	position: absolute;
+	top: 45px;
+	left: 143px;
+	float: left;
+}
+
+.index-social i,
+.social i {
+	color: #fff;
+	background-color: transparent;
+	padding: 5px;
+	height: 20px;
+	width: 20px;
+	font-size: 20px;
+	margin-top: 40px;
+	float: left;
+}
+
+/* Social media buttons for non-index pages */
+.social {
+	font-size: 20px;
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	float: left;
+}
+
+/* Box layout for Index Page */
+#box {
+	display: inline-block;
+	border: 4px double #807A7A;
+	border-radius: 15px;
+	width: 250px;
+	height: auto;
+	margin: auto;
+	padding: 15px;
+	background-color: #fff;
+	transition: 0.5s;
+}
+
+#box a {
+	color: #000;
+	background-color: transparent;
+	transition: 0.5s;
+}
+
+#box:hover {
+	background-color: #807A7A;
+	transition: 0.5s;
+}
+
+/* Box headings for Index Page */
+#box-heading {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+#box p {
+	font-size: 14px;
+	margin: auto;
+}
+
+#box i {
+	margin: 30px auto;
+	color: #000;
+	font-size: 35px;
+}
+
+/* Nav for other pages */
+#secondary-nav {
+	padding: 15px;
+	width: auto;
+	background-color: #fff;
+	border: 4px double #000;
+}
+
+/* Contact Form ~ codepen */
+form h1 {
+	font-size: 18px;
+	background: #807A7A;
+	padding: 15px;
+	border-radius: 15px 15px 0 0;
+	margin: 0 30px auto;
+}
+
+form {
+	border-radius: 15px;
+	max-width: 700px;
+	width: 100%;
+	margin: auto;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+form p span {
+	color: #547C53;
+	font-weight: bold;
+}
+
+input {
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #F9FAF5;
+	margin-bottom: 15px;
+	width: 75%;
+	height: 40px;
+	float: left;
+	padding: 0 15px;
+}
+
+textarea {
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #F9FAF5;
+	margin: 0;
+	width: 75%;
+	height: 130px;
+	float: left;
+	padding: 0 15px;
+}
+
+.form-group {
+	overflow: hidden;
+	clear: both;
+}
+
+.icon-case {
+	float: left;
+	border-radius: 5px 0 0 5px;
+	background: #F9FAF5;
+	color: #000;
+	width: 35px;
+	height: 42px;
+	font-size: 18px;
+	position: relative;
+	line-height: 45px;
+}
+
+.contentform {
+	padding: 30px;
+}
+
+.button-contact {
+	background-color: #807A7A;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	border-radius: 0 0 15px 15px;
+	cursor: pointer;
+	margin-top: 40px;
+	font-size: 18px;
+}
+
+.leftcontact {
+	width: 49.5%;
+	float: left;
+	border-right: 4px double #000;
+	box-sizing: border-box;
+	padding: 0 15px 0 0;
+}
+
+.rightcontact {
+	width: 49.5%;
+	float: right;
+	box-sizing: border-box;
+	padding: 0 0 0 15px;
+}
+
+#sendmessage {
+	border: 0;
+	display: none;
+	margin: 10px 0;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	margin-bottom: 30px;
+	background-color: #DF9997;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+#sendmessage.show,
+.show {
+	display: block;
+}
+
+/* Footer */
+#footer {
+	background-color: #807A7A;
+	padding: 15px;
+	height: auto;
+	margin: 0;
+	font-size: 12px;
+}
+
+#footer-menu {
+	color: #000;
+}
+
+#footer-menu a {
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+#footer-menu a:hover {
+	color: #000;
+	transition: 0.5s;
+}
+
+#footer i {
+	color: #fff;
+	border-radius: 50%;
+	background-color: #000;
+	padding: 10px;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin: 0 5px 10px 0;
+	font-size: 20px;
+	transition: 0.5s;
+}
+
+#footer i:hover {
+	color: #000;
+	background-color: #fff;
+	transition: 0.5s;
+}
+
+/* Responsive codes */
+
+/* Small devices */
+@media only screen and (max-width: 767px) {
+	#mobile-nav {
+		visibility: visible;
+	}
+	.openbtn {
+		visibility: visible;
+	}
+	.wrapper2 {
+		margin: 15px auto;
+	}
+	ul {
+		margin-left: -40px;
+	}
+	#cover {
+		width: auto;
+		margin: -5px -85px auto;
+	}
+	#box {
+		display: block;
+		width: 250px;
+		height: auto;
+		margin: 0 auto 30px auto;
+	}
+	#nav {
+		display: none;
+	}
+	.index-social {
+		display: none;
+	}
+	#secondary-nav {
+		display: none;
+	}
+	#img-line {
+		visibility: visible;
+	}
+	.social {
+		display: none;
+	}
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+	#mobile-nav {
+		display: none;
+	}
+	.openbtn {
+		display: none;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+	.wrapper2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 15px auto;
+		grid-gap: 5px;
+	}
+	ul {
+		margin-left: -40px;
+	}
+	#cover {
+		width: auto;
+		margin: -5px -85px auto;
+	}
+	#cover-bkg, #border-bkg {
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#box {
+		display: block;
+		margin: 0 auto 60px auto;
+	}
+	#nav {
+		visibility: visible;
+	}
+	.index-social {
+		margin-left: -90px;
+	}
+	#secondary-nav {
+		visibility: visible;
+	}
+	#img-line {
+		display: none;
+	}
+}
+
+/* Large devices */
+@media only screen and (min-width: 992px) {
+	#mobile-nav {
+		display: none;
+	}
+	.openbtn {
+		display: none;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+	.wrapper2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 15px auto;
+		grid-gap: 5px;
+	}
+	ul {
+		display: inline-block;
+	}
+	#cover {
+		width: auto;
+		margin: -5px auto;
+	}
+	#cover-bkg, #border-bkg {
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#box {
+		display: block;
+		margin: 0 auto 60px auto;
+	}
+	#nav {
+		visibility: visible;
+	}
+	.index-social {
+		margin-left: -5px;
+	}
+	#secondary-nav {
+		visibility: visible;
+	}
+	#img-line {
+		display: none;
+	}
+}
+
+/* Extra large devices */
+@media only screen and (min-width: 1200px) {
+	#mobile-nav {
+		display: none;
+	}
+	.openbtn {
+		display: none;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin: auto;
+	}
+	.wrapper2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 15px auto;
+		grid-gap: 5px;
+	}
+	ul {
+		display: inline-block;
+	}
+	#cover {
+		margin: -5px auto;
+	}
+	#cover-bkg, #border-bkg {
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#box {
+		display: block;
+		margin: 0 auto 30px auto;
+	}
+	#nav {
+		visibility: visible;
+	}
+	#secondary-nav {
+		visibility: visible;
+	}
+	#img-line {
+		display: none;
+	}
+}
